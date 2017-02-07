@@ -1,0 +1,521 @@
+body {
+	background-color: #DDDDDD;
+	background-image: url("/pics/bg.jpg");
+	background-repeat: repeat-x;
+	text-align: center;
+}
+a {
+	text-decoration: underline;
+	color: #000;
+}
+a:hover {
+	text-decoration: underline;
+	color: #3E3E3E;
+}
+img {
+	border: none;
+}
+div {
+	margin: 7px;
+}
+fieldset {
+	border: 1px dotted black;
+	margin: 7px;
+	padding: 5px;
+}
+table {
+	border-collapse: collapse;
+}
+legend {
+	font-weight: bold;
+	text-align: left;
+}
+input, select, textarea {
+	margin: 0;
+	font-size: 13px;
+}
+td input, select {
+	float: left;
+}
+
+span.term {
+	position: relative;
+}
+span.note {
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 210%;
+	text-align: left;
+	padding: 3px;
+	z-index: 500;
+	background-color: #FFAC00;
+	color: #000000;
+	border: 1px solid #3E3E3E;
+}
+span.term:hover > span.note {
+	visibility: visible;
+}
+
+.head {
+	background-color: #D0D0D0;
+}
+.r1 {
+	background-color: #F2F2F2;
+}
+#selected {
+	background-color: #FFAC00;
+}
+.r1:hover, .r0:hover {
+	background-color: #FFCE00;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.center {
+	text-align: center;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+.strong {
+	font-weight: bold;
+}
+.disabled {  /* Disabled taxid on quotes */
+	font-weight: bold;
+	font-family: "Courier New", monospace;
+	font-size: 120%;
+}
+
+/* -*-*-*-*-*-*-*- Begin menu formatting -*-*-*-*-*-*-*- */
+#banner {
+	position: relative;
+	height: 115px;
+	background-color: #FFFFFF;
+	width: 1000px;
+	margin: 8px auto 5px;
+	font-family: "Courier New", monospace;
+	border: 2px solid #000000;
+}
+#logo {
+	position: absolute;
+	left: 7px;
+	top: 7px;
+}
+#menu {
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+	height: 30px;
+	border-collapse: separate;
+}
+#menu a {
+	text-decoration: none;
+}
+#title {
+	position: absolute;
+	top: 15px;
+	left: 110px;
+	font-weight: bold;
+	font-size: 25pt;
+	text-align: left;
+	padding: 0px 15px;
+	vertical-align: middle;
+	height: 2em;
+}
+#username {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-weight: normal;
+	font-size: 10pt;
+}
+/* -*-*-*-*-*-*-*- End menu formatting -*-*-*-*-*-*-*- */
+
+/* -*-*-*-*-*-*-*- Begin main div format -*-*-*-*-*-*-*- */
+#main , #skinny {
+	position: relative;
+	background-color: #FFFFFF;
+	width: 1000px;
+	margin: 5px auto;
+	border: 2px solid #000000;
+}
+#skinny {
+	width: 625px;
+}
+/* -*-*-*-*-*-*-*- End main div -*-*-*-*-*-*-*- */
+
+/* -*-*-*-*-*-*-*- Begin quote form -*-*-*-*-*-*-*- */
+#quoteNum {
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: left;
+	width: 100px;
+	height: 37px;
+	z-index: 4;
+}
+#quoteNum > input {
+	width: 93px;
+}
+#editSignature {
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	font-size: 90%;
+}
+#quoteCust {
+	position: relative;
+	top: 0;
+	text-align: right;
+	vertical-align: top;
+	padding: 44px 0 0 0;
+}
+#quoteList {
+	padding: 34px 0 0 0;
+	text-align: left;
+}
+#quoteList td{
+	vertical-align: top;
+}
+.parentItem {
+	background-color: #FFAC00;
+}
+.childItem {
+	background-color: #E2E2E2;
+}
+#addressBox {
+	text-align: left;
+}
+#shipInv {
+	position: absolute;
+	top: 44px;
+	left: 500px;
+	text-align: right;
+}
+#custHistory {
+	font-family: "Courier New", monospace;
+	width: 500px;
+}
+#email_id, #phone_id, #fax_id {
+	min-width: 250px;
+}
+#messages {
+	font-weight: bold;
+}
+#messages > textarea {
+	width: 980px;
+	margin: 8px auto;
+}
+
+#printPDF {
+	margin: 7px;
+	position: absolute;
+	width: 100px;
+	bottom: 0;
+	left: 0;
+}
+#printPDF > input, #printPDF > select {
+	width: 100%;
+}
+#attachments {
+	text-align: left;
+	max-height: 260px;
+	overflow: auto;
+}
+.modelInput {
+	width: 165px;
+}
+.quoteBarcodeSelect {
+	width: 151px;
+}
+.typeInput {
+	width: 90px;
+}
+.descInput {
+	width: 470px;
+}
+.qtyInput{
+	width: 30px;
+}
+.priceInput {
+	width: 80px;
+}
+/* -*-*-*-*-*-*-*- End quote form -*-*-*-*-*-*-*- */
+
+/* -*-*-*-*-*-*-*- Begin item form -*-*-*-*-*-*-*- */
+#itemMain {
+	float: left;
+}
+#itemMain td  {
+	text-align: right;
+}
+#itemTAs {
+	float: left;
+	text-align: left;
+}
+#itemTAs tr {
+	padding: 2px 0;
+}
+#itemTAs td {
+	padding: 0 2px;
+}
+#itemTAs input {
+	margin: 2px 8px;
+}
+#itemSubmit {
+	clear: both;
+	bottom: 7px;
+}
+#itemRates {
+	position: absolute;
+	bottom: 0;
+	text-align: right;
+}
+#itemRates input {
+	margin: 0 8px 0 0;
+}
+td.viewBox {
+	min-width: 115px;
+}
+#itemsTable {
+	width: 100%;
+	border: 1px solid #AAAAAA;
+	border-collapse: collapse;
+}
+#itemsTable td {
+	text-align: left;
+	border: 1px solid #AAAAAA;
+	padding: 2px 3px;
+}
+#assemMain {
+	position: relative;
+}
+#editAssem  td{
+	text-align: left;
+	vertical-align: top;
+}
+#txtpriority {
+	margin: 2px;
+	display: inline-block;
+	width: 100px;
+	text-transform: capitalize;
+	text-align: center;
+}
+#atCustomer {
+
+}
+
+#itemSignature, #custSignature {
+	visibility: hidden;
+	font-size: 90%;
+	position: relative;
+	text-align: center;
+}
+/**** htscode *****/
+#htscodes {
+/* 	overflow: hidden; */
+/* 	table-layout:fixed; */
+
+
+}
+#htscodes thead {
+	font-weight: bold;
+	text-align: left;
+
+}
+.trunicate {
+	width: 70%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin: 0 0 0 1px;
+	text-overflow:   ellipsis;
+	white-space: nowrap;
+}
+#htscodes tr td:last-child, #htscodes tr td:nth-child(2) {
+/* 	width: 40%; */
+	text-align: left;
+}
+/* -*-*-*-*-*-*-*- End item form -*-*-*-*-*-*-*- */
+
+/* -*-*-*-*-*-*-*- Begin customer form -*-*-*-*-*-*-*- */
+
+#custMain {
+	float: left;
+
+}
+#custSubmit {
+	/*position: relative;*/
+	clear: both;
+}
+#p {
+	float: left;
+	text-align: left;
+}
+#en {
+	position: absolute;
+	margin: 7px 0 0 0;
+	z-index: 3;
+}
+/* -*-*-*-*-*-*-*- End customer form -*-*-*-*-*-*-*- */
+
+/* -*-*-*-*-*-*-*- Begin positions -*-*-*-*-*-*-*- */
+#repMain {
+	position: relative;
+	top: -7px;
+	left: -7px;
+	min-height: 430px;
+	width: 370px;
+	padding: 7px 7px 25px 7px;
+}
+#repNotes {
+	position: absolute;
+	top: 0px;
+	left: 385px;
+	text-align: left;
+	width: 605px;
+}
+.moreInfo {
+	min-width: 250px;
+}
+#histView {
+	position: absolute;
+}
+#repSave {
+	position: absolute;
+	bottom: 0;
+	left: 150px;
+}
+#incomingTypes {
+	min-width: 215px;
+}
+.receivingList {
+	margin: 0;
+	width: 585px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.receivingList td {
+	text-align: left;
+	border: 1px solid black;
+	padding: 2px 3px;
+}
+.notesInput {
+	width: 578px;
+}
+#queueView {
+	overflow: auto;
+}
+#txtstatus  {
+	text-transform: capitalize;
+	padding-left: 9px;
+}
+/* -*-*-*-*-*-*-*- End positions -*-*-*-*-*-*-*- */
+
+/* -*-*-*-*-*-*-*- Begin login form -*-*-*-*-*-*-*- */
+#loginForm td.loginError {
+	text-align: left;
+	padding: 4px;
+	color: red;
+	font-size: 14pt;
+}
+#loginForm {
+	text-align: right;
+	margin: 3px auto;
+}
+.cblist {
+	width: 100px;
+}
+/* -*-*-*-*-*-*-*- End login form -*-*-*-*-*-*-*- */
+
+/* -*-*-*-*-*-*-*- General form -*-*-*-*-*-*-*- */
+.imglink {
+	margin: 0 5px;
+}
+#hiddenInputs {
+	display: none;
+}
+/* -*-*-*-*-*-*-*- End form formatting -*-*-*-*-*-*-*- */
+
+#footer {
+	position: relative;
+	margin: 5px auto;
+	font-size: 10pt;
+	font-family: "Courier New", monospace;
+}
+
+/* -*-*-*-*-*-*-*- Begin suggest formatting -*-*-*-*-*-*-*- */
+.highlight {
+	background-color: #DDDDDD;
+}
+div.relPos {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+div.suggShadow {
+	display: none;
+	position: absolute;
+	top: 24px;
+	left: 2px;
+	margin: 0;
+	min-width: 300px;
+	padding: 0;
+	background-color: #DDDDDD;
+	color: #000000;
+	z-index: 4;
+}
+div.suggBox {
+	background-color: #FFFFFF;
+	text-align: left;
+	position: relative;
+	left: -2px;
+	top: -2px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #999999;
+	max-height: 250px;
+	overflow: auto;
+}
+ul.suggList {
+	display: inline-block;
+	list-style: none;
+	padding: 3px;
+	margin: 0px;
+	width: 97%;
+}
+span.make {
+	float: right;
+}
+
+/* -*-*-*-*-*-*-*- Begin treemenu -*-*-*-*-*-*-*- */
+.treemenu {
+	list-style : none;
+}
+.treemenu ul {
+	list-style : none;
+	margin : 0px 10px;
+	padding : 0px 10px;
+}
+.treemenu li {
+}
+.treemenu a {
+	display : block;
+	padding-left : 12px;
+	text-decoration : none;
+}
+.treemenu .treeopen {
+	background-image : url("/pics/open.gif");
+	background-repeat : no-repeat;
+	background-position : left;
+}
+.treemenu .treeclosed {
+	background-image : url("/pics/closed.gif");
+	background-repeat : no-repeat;
+	background-position : left;
+}
